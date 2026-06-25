@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Thiranex Task 3 - JavaScript To-Do List">
+
+    <meta name="keywords"
+          content="ToDo List, JavaScript, CRUD, LocalStorage">
+
+    <meta name="author"
+          content="Santhosh V S">
+
+    <title>To-Do List | Thiranex Task 3</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+
+📝 JavaScript To-Do List
+
+</h1>
+
+<p>
+
+Thiranex Internship - Task 3
+
+</p>
+
+</header>
+
+<section class="add-task">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a new task...">
+
+<button
+id="addBtn">
+
+Add Task
+
+</button>
+
+</section>
+
+<section class="filters">
+
+<button
+class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="active">
+
+Active
+
+</button>
+
+<button
+class="filter-btn"
+data-filter="completed">
+
+Completed
+
+</button>
+
+</section>
+
+<section class="task-info">
+
+<p>
+
+Total Tasks :
+
+<span id="totalTasks">
+
+0
+
+</span>
+
+</p>
+
+</section>
+
+<section>
+
+<ul id="taskList">
+
+<!-- Tasks will be added dynamically -->
+
+</ul>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/* ===========================
+   THIRANEX TASK 3
+   TO-DO LIST CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#666;
+}
+
+/* Input */
+
+.add-task{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.add-task input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.add-task input:focus{
+    outline:none;
+    border-color:#0d6efd;
+}
+
+.add-task button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-task button:hover{
+    background:#084298;
+}
+
+/* Filter Buttons */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.filter-btn{
+    border:none;
+    background:#ddd;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.filter-btn.active{
+    background:#0d6efd;
+    color:white;
+}
+
+.filter-btn:hover{
+    background:#0b5ed7;
+    color:white;
+}
+
+/* Task Counter */
+
+.task-info{
+    text-align:center;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+/* Task List */
+
+#taskList{
+    list-style:none;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f9fa;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.task:hover{
+    transform:translateY(-2px);
+}
+
+.task.completed span{
+    text-decoration:line-through;
+    color:gray;
+}
+
+/* Buttons */
+
+.actions button{
+    margin-left:8px;
+    padding:8px 12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.complete-btn{
+    background:#198754;
+    color:white;
+}
+
+.edit-btn{
+    background:#ffc107;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.add-task{
+    flex-direction:column;
+}
+
+.task{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.actions{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+}
